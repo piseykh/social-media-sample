@@ -1,12 +1,12 @@
 class UsersController < ApplicationController
   before_action :set_user
+
   def new
     @user = User.new
   end
 
   def edit
   end
-
 
   def show
     @activities = Post.where(user_id: @user.id).order(created_at: :desc)
@@ -15,7 +15,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      redirect_to root_url, :notice => "Signed up!"
+      session[:user_id] = @user.id
+      redirect_to root_url
     else
       render "new"
     end
@@ -28,8 +29,8 @@ class UsersController < ApplicationController
   end
 
   def friends
-    @friends =[]
-    @followers= @user.followers
+    @friends = []
+    @followers = @user.followers
     @followers.each do |f|
       @friends.push(f.followable)
     end

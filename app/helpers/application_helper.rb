@@ -17,12 +17,10 @@ module ApplicationHelper
   end
 
   def likes_count(post)
-    puts "=====likes_count"
     post.likes.count
   end
 
   def comments_count(post)
-    puts "=====comments_count"
     post.comments.count
   end
 end
