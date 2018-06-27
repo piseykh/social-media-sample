@@ -2,58 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14977932-01d9-4c67-bdb9-f3640a4bea72" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/comments.css.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/follows.css.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/home.css.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/posts.css.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/styles.css.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/users.css.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/variables.css.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/comments_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/follows_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/likes_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/home_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/like_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/comment.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/follow.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/like.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/post.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/comments/_comment.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/comments/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/comments/create.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/comments/destroy.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/follows/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/follows/create.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/follows/destroy.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/home/_intro.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/home/_links.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/home/_user_info.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/home/find_friends.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/home/front.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/likes/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/likes/create.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/likes/destroy.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/posts/_actions.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/posts/_created_at.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/posts/_edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/posts/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/posts/_post.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/posts/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/posts/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/sessions/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/users/_user.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/users/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/users/friends.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/users/friends.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/users/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -99,7 +48,17 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="68" column="3" lean-forward="true" selection-start-line="68" selection-start-column="3" selection-end-line="68" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -140,7 +99,6 @@
         <option value="$PROJECT_DIR$/app/views/follows/create.js.erb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/posts/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/posts/_edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/posts/edit.html.erb" />
@@ -169,6 +127,7 @@
         <option value="$PROJECT_DIR$/app/views/home/front.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/styles.css.scss" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -184,8 +143,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="262" />
-    <option name="y" value="395" />
+    <option name="x" value="51" />
+    <option name="y" value="22" />
     <option name="width" value="1128" />
     <option name="height" value="690" />
   </component>
@@ -388,23 +347,24 @@
       <workItem from="1530070884246" duration="231000" />
       <workItem from="1530072884707" duration="7457000" />
       <workItem from="1530082193494" duration="10253000" />
-      <workItem from="1530093668375" duration="5249000" />
+      <workItem from="1530093668375" duration="5663000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47381000" />
+    <option name="totallyTimeSpent" value="47795000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="262" y="395" width="1128" height="690" extended-state="0" />
+    <frame x="51" y="22" width="1128" height="690" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32954547" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="8" />
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Terminal" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3076241" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.3076241" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" weight="0.40159574" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
@@ -489,13 +449,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -771,6 +724,13 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="68" column="3" lean-forward="true" selection-start-line="68" selection-start-column="3" selection-end-line="68" selection-end-column="3" />
         </state>
       </provider>
     </entry>
