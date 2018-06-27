@@ -1,0 +1,19 @@
+<div>
+  <div id="front">
+    <div>
+      <%= render 'home/intro' %>
+    </div>
+
+    <div id="newsfeed">
+      <div id="activities">
+        <% @activities.each do |activity| %>
+          <%= render 'posts/post', post: activity%>
+        <% end %>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+

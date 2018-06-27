@@ -1,0 +1,25 @@
+.content {
+  margin-left: 60px;
+  padding: 5px 15px;
+
+  .text {
+    font-size: $default-font-size;
+  }
+}
+
+
+.attachment {
+  padding: 5px;
+  margin-top: 10px;
+  img {
+    width: 100%;
+  }
+}
+#image_url {
+  width:30%;
+  display: inline-block;
+  border: 1px solid $border-color;
+}
+
+
+

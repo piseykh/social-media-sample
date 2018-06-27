@@ -1,0 +1,2 @@
+$("#post-<%= @likeable.id %> .like").html("<%=j render('likes/form', likeable: @likeable) %>");
+$("#post-<%= @likeable.id %> .like-count").html("<%= pluralize(likes_count(@likeable), 'like') %>");

@@ -1,0 +1,20 @@
+#newsfeed > h4 {
+  text-align: center;
+  padding: 10px;
+}
+
+#front {
+  padding: 10px;
+  width: 50%;
+  margin: auto;
+}
+
+#img-preview {
+  padding: 5px;
+  display: inline-block;
+  border: 1px solid $border-color;
+  img {
+    width: 35px;
+    height: 35px;
+  }
+}

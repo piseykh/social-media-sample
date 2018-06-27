@@ -1,0 +1,27 @@
+<div class="well">
+<!--  <div id="mentionable-data" data-content="<%#= mentionable_user_path(current_user) %>"></div>-->
+  <%= form_for @post, html: { class: 'post_form' } do |f| %>
+
+    <div class="form-group">
+      <h4>Update Status</h4>
+      <%= f.text_field :content_text, class: 'form-control input-mentionable'%>
+    </div>
+
+
+
+    <div class="form-group">
+      <%= f.file_field :image1_url %>
+    </div>
+    <div class="form-group">
+      <%= f.file_field :image2_url %>
+    </div>
+    <div class="form-group">
+      <%= f.file_field :image3_url %>
+    </div>
+
+    <div class="form-group">
+      <%= f.submit 'Post', class: 'btn btn-primary'%>
+    </div>
+  <% end %>
+
+</div>

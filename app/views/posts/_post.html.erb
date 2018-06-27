@@ -1,0 +1,45 @@
+<% if post.user %>
+  <div id="post-<%= post.id %>" class="activity-post">
+    <div class="post">
+      <div class="info">
+        <h4 class="name"><%= link_to post.user.name, user_path(post.user) %></h4>
+        <span class="action">created a <%= link_to 'post', post %></span>
+      </div>
+      <div class="content">
+        <span class="text"><%= post.content_text %></span>
+
+        <div class="attachment">
+          <% if post.image1_url.present? %>
+            <div id="image_url"><%= image_tag(post.image1_url.url.to_s) %></div>
+          <% end %>
+          <% if post.image2_url.present? %>
+            <div id="image_url"><%= image_tag(post.image2_url.url.to_s) %></div>
+          <% end %>
+          <% if post.image3_url.present? %>
+            <div id="image_url"><%= image_tag(post.image3_url.url.to_s) %></div>
+          <% end %>
+        </div>
+
+        <%= render 'posts/created_at', activity: post %>
+        <div class="points">
+          <span class="like-count"><%= pluralize(likes_count(post), 'like') %></span>
+          <span class="comments-count"><%= pluralize(comments_count(post), 'comment') %></span>
+          <div class="pull-right">
+
+            <% if belongs_to_user?(post) %>
+              <%= link_to edit_post_path(post), class: 'btn btn-primary btn-sm' do %>
+                <% fa_icon 'pencil' %>
+              <% end %>
+              <%= link_to post_path(post), method: :delete, class: 'btn btn-danger btn-sm' do %>
+                <% fa_icon 'trash' %>
+              <% end %>
+            <% end %>
+
+          </div>
+        </div>
+      </div>
+      <%= render 'posts/actions', resource: post %>
+    </div>
+  </div>
+<% end %>
+
