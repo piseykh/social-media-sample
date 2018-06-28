@@ -23,4 +23,8 @@ module ApplicationHelper
   def comments_count(post)
     post.comments.count
   end
+
+  def get_post_attachments(post)
+    @attachments = post.attachments
+  end
 end

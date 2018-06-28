@@ -1,9 +1,6 @@
 class Post < ActiveRecord::Base
-  mount_uploader :image1_url, AvatarUploader
-  mount_uploader :image2_url, AvatarUploader
-  mount_uploader :image3_url, AvatarUploader
-
   belongs_to :user
-  has_many :comments
-  has_many :likes
+  has_many :comments, dependent: :delete_all
+  has_many :likes, dependent: :delete_all
+  has_many :attachments, dependent: :delete_all
 end

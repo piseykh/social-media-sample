@@ -34,6 +34,7 @@ class UsersController < ApplicationController
     @followers.each do |f|
       @friends.push(f.followable)
     end
+    @user = current_user
   end
 
   def find_friends
@@ -43,6 +44,7 @@ class UsersController < ApplicationController
       @friends.push(f.followable_id)
     end
     @users =  User.where.not(id: @friends.unshift(current_user.id))
+    @user = current_user
   end
 
   private

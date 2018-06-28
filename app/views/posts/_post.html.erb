@@ -9,14 +9,10 @@
         <span class="text"><%= post.content_text %></span>
 
         <div class="attachment">
-          <% if post.image1_url.present? %>
-            <div id="image_url"><%= image_tag(post.image1_url.url.to_s) %></div>
-          <% end %>
-          <% if post.image2_url.present? %>
-            <div id="image_url"><%= image_tag(post.image2_url.url.to_s) %></div>
-          <% end %>
-          <% if post.image3_url.present? %>
-            <div id="image_url"><%= image_tag(post.image3_url.url.to_s) %></div>
+          <% if get_post_attachments(post) %>
+            <% @attachments.each do |attachment| %>
+              <%= image_tag(attachment.file.url.to_s) %>
+            <% end %>
           <% end %>
         </div>
 

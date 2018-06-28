@@ -8,6 +8,12 @@ class PostsController < ApplicationController
   def create
     @post = current_user.posts.new(post_params)
     if @post.save
+      files=params.require(:post).permit(:file1,:file2,:file3)
+      files.each do |f|
+        if f
+          Attachment.new({:file=>f[1],:post_id=>@post.id}).save
+        end
+      end
       redirect_to root_path
     end
   end
@@ -35,6 +41,6 @@ class PostsController < ApplicationController
   end
 
   def post_params
-    params.require(:post).permit(:content_text, :image1_url, :image2_url, :image3_url)
+    params.require(:post).permit(:content_text)
   end
 end

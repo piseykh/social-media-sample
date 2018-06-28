@@ -4,12 +4,11 @@ class User < ActiveRecord::Base
   validates_presence_of :password, :on => :create
   validates_presence_of :email
   validates_uniqueness_of :email
-  has_many :posts
-  has_many :comments
-  has_many :likes
+  has_many :posts, dependent: :delete_all
+  has_many :comments, dependent: :delete_all
+  has_many :likes, dependent: :delete_all
   has_many :followable_users, class_name: "Follow", foreign_key: "followable_id"
   has_many :followers, class_name: "Follow", foreign_key: "follower_id"
-
 
   def self.authenticate(email, password)
     user = find_by_email(email)
