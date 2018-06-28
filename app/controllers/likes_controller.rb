@@ -1,13 +1,12 @@
 class LikesController < ApplicationController
-
   def create
-    like = current_user.likes.new({:post_id => params[:likeable_id]})
+    like = current_user.likes.new({:post_id => params[:format]})
     like.save
-    @likeable = Post.find(params[:likeable_id])
+    @likeable = Post.find(params[:format])
   end
 
   def destroy
-    Like.find_by(post_id:params[:likeable_id],user_id:current_user.id).destroy
-    @likeable = Post.find(params[:likeable_id])
+    Like.find_by(post_id:params[:id],user_id:current_user.id).destroy
+    @likeable = Post.find(params[:id])
   end
 end

@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user
+  before_action :set_user, only: :show
 
   def new
     @user = User.new
@@ -30,10 +30,19 @@ class UsersController < ApplicationController
 
   def friends
     @friends = []
-    @followers = @user.followers
+    @followers = current_user.followers
     @followers.each do |f|
       @friends.push(f.followable)
     end
+  end
+
+  def find_friends
+    @followers = current_user.followers
+    @friends =[]
+    @followers.each do |f|
+      @friends.push(f.followable_id)
+    end
+    @users =  User.where.not(id: @friends.unshift(current_user.id))
   end
 
   private

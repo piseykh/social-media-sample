@@ -1,20 +1,17 @@
 Rails.application.routes.draw do
+  root to: 'home#index'
   resources :posts
   resources :users do
-    member do
+    collection do
       get :friends
+      get :find_friends
     end
   end
   resources :comments, only: [:create, :destroy]
+  resources :likes, only: [:create, :destroy]
+  resources :follows, only: [:create, :destroy]
 
-  root to: 'home#index'
   get "front" => "home#front"
   get "sign_out" => "sessions#destroy"
   get "sign_in" => "sessions#create"
-  get "find_friends" => "home#find_friends"
-
-  post "/like" => "likes#create"
-  post "/unlike" => "likes#destroy"
-  post "/follow" => "follows#create"
-  post "/unfollow" => "follows#destroy"
 end

@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_27_080323) do
+ActiveRecord::Schema.define(version: 2018_06_28_022340) do
+
+  create_table "attachments", force: :cascade do |t|
+    t.integer "post_id"
+    t.string "file"
+    t.index ["post_id"], name: "index_attachments_on_post_id"
+  end
 
   create_table "comments", force: :cascade do |t|
     t.text "comment"

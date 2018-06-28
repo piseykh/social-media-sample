@@ -6,7 +6,7 @@ class HomeController < ApplicationController
   end
 
   def index
-    unless current_user
+    unless @user
       return redirect_to front_path
     end
     @post = Post.new
@@ -16,17 +16,6 @@ class HomeController < ApplicationController
       @friends.push(f.followable_id)
     end
     @activities = Post.where(user_id: @friends).order(created_at: :desc)
-  end
-
-  def find_friends
-    @followers = @user.followers
-    puts "=====find_friends",@friends
-
-    @friends =[]
-    @followers.each do |f|
-      @friends.push(f.followable_id)
-    end
-    @users =  User.where.not(id: @friends.unshift(@user.id))
   end
 
   private
