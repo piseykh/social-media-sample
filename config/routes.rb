@@ -15,6 +15,6 @@ Rails.application.routes.draw do
 
   post "/like" => "likes#create"
   post "/unlike" => "likes#destroy"
-  post "/follow" => "follows#create", :as => :follow
-  post "/unfollow" => "follows#destroy", :as => :unfollow
+  post "/follow" => "follows#create"
+  post "/unfollow" => "follows#destroy"
 end
