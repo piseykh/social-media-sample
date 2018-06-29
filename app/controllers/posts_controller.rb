@@ -3,6 +3,7 @@ class PostsController < ApplicationController
 
   def show
     @comments = @post.comments.all
+    @user =current_user
   end
 
   def create

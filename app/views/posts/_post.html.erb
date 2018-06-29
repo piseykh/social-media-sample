@@ -7,7 +7,6 @@
       </div>
       <div class="content">
         <span class="text"><%= post.content_text %></span>
-
         <div class="attachment">
           <% if get_post_attachments(post) %>
             <% @attachments.each do |attachment| %>
@@ -15,13 +14,11 @@
             <% end %>
           <% end %>
         </div>
-
         <%= render 'posts/created_at', activity: post %>
         <div class="points">
           <span class="like-count"><%= pluralize(likes_count(post), 'like') %></span>
           <span class="comments-count"><%= pluralize(comments_count(post), 'comment') %></span>
           <div class="pull-right">
-
             <% if belongs_to_user?(post) %>
               <%= link_to edit_post_path(post), class: 'btn btn-primary btn-sm' do %>
                 <% fa_icon 'pencil' %>
@@ -30,7 +27,6 @@
                 <% fa_icon 'trash' %>
               <% end %>
             <% end %>
-
           </div>
         </div>
       </div>

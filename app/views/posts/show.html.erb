@@ -1,21 +1,29 @@
-<div id="post-<%= @post.id %>" class="post">
-    <div class="row">
-      <div class="col-lg-6 col-lg-offset-3 well">
+<div class="row">
+  <div class="col-lg-3">
+    <%= render 'home/user_info' %>
+  </div>
+  <div class="col-lg-6">
+    <div class="activity-post">
+      <div id="post-<%= @post.id %>" class="post">
         <%= render @post, remote: false %>
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-6 col-lg-offset-3 well">
+    <div class="well">
+      <div>
         <h4>Comments</h4>
         <% if current_user %>
-        <hr>
-        <%= render 'comments/form', commentable: @post %>
-          <% end %>
+          <hr>
+          <%= render 'comments/form', commentable: @post %>
+        <% end %>
         <br>
         <div class="comments">
-          <%= render(@comments)%>
+          <%= render(@comments) %>
         </div>
       </div>
     </div>
   </div>
+  <div class="col-lg-3">
+    <%= render 'home/links' %>
+  </div>
+</div>
 
